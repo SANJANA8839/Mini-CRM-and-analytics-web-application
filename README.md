@@ -1,95 +1,73 @@
-# Mini-CRM + Analytics Web App
+🚀 Tech Stack
 
-## Project Description
+Frontend: React, TailwindCSS, Axios, Recharts, Vite
+Backend: FastAPI, Uvicorn, SQLAlchemy, Pydantic
+Database: SQLite
+Environment: Python Virtual Environment (venv), Node.js
 
-This is a Mini-CRM + Analytics web application designed to manage customer relationships efficiently. 
-The app includes features such as user authentication, CRUD operations for customers and deals,
-CSV import/export functionality, and an analytics dashboard for insightful data visualization.
+⚙️ Features
 
----
+🔐 User Authentication – Secure login and registration system.
 
-## Tech Stack
+👥 Customer Management – Add, edit, delete, and view customer records.
 
-- **Frontend:** React, TailwindCSS, React Router
-- **Backend:** FastAPI, Uvicorn
-- **Database:** SQLite (local file-based)
-- **Authentication:**
-- **Other:** Axios for API calls, Recharts for analytics graphs
+💼 Deal Tracking – Manage sales deals and link them to customer data.
 
----
+📊 Analytics Dashboard – Visualize insights using interactive charts (Recharts).
 
-## Setup Instructions
+📁 CSV Import/Export – Easily manage large data using file operations.
 
-### 1. Clone the repository
+⚡ Real-Time Updates – Fast API responses and smooth UI interaction.
 
-```bash
-git clone https://github.com/NAYAN-KAHAR/Mini-CRM-Analytics-Web-App
+🧠 Project Structure
+Mini-CRM-Analytics-Web-App/
+│
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── routes/
+│   │   ├── models/
+│   │   ├── schemas/
+│   │   └── database.py
+│   ├── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+└── README.md
+
+🧩 Setup & Run Instructions
+🔹 Step 1: Clone Repository
+git clone https://github.com/yourusername/Mini-CRM-Analytics-Web-App.git
 cd Mini-CRM-Analytics-Web-App
+
+🔹 Step 2: Setup Backend
+cd backend
+python -m venv venv
+venv\Scripts\activate     # On Windows
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+
+
+👉 Backend will run at: http://127.0.0.1:8000
+
+🔹 Step 3: Setup Frontend
+cd ../frontend
 npm install
-
-## 2. Install dependencies
-
-# Backend
-Create and activate a Python virtual environment (optional but recommended):
-
-python3 -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
-
-# Install backend dependencies:
-pip install -r backend/requirements.txt
+npm run dev
 
 
-#Running the app both together frontent and backend || Provide one-command run (npm run dev)
-inside  Mini-CRM-Analytics-Web-App
-  npm install
-  npm run dev
-  
-```
+👉 Frontend will run at: http://localhost:5173
 
+📈 Screenshots
 
-### 2. Additional Notes
-## Communication
+Add screenshots or demo GIFs here (like login page, dashboard, analytics view, etc.)
 
-- Frontend communicates with backend via **REST API** calls using Axios.
-- Backend exposes endpoints under `/api` for CRUD operations (users, customers, deals).
-- Frontend consumes API to perform CRUD and fetch analytics data.
+💡 Future Improvements
 
----
+Add role-based user access (Admin/User)
 
-## Database
-
-- Uses **SQLite** as a lightweight local database.
-- Database schema modeled with **SQLAlchemy ORM**.
-- Tables include:
-  - `users` for authentication
-  - `customers` for CRM data
-  - `deals` representing sales or opportunities
-
-- Seed data scripts initialize the database with sample data.
-
----
-
-## Libraries
-
-- **FastAPI** for backend due to its async capabilities and automatic API docs.
-- **React + Vite** for fast, modern frontend development.
-- **TailwindCSS** for utility-first styling.
-- **Recharts** for charts and analytics visualization.
-- **Concurrently** npm package to run frontend and backend in one command.
--  Modular folder structure separating API routers, models, schemas, and utils.
-
----
-
-## Summary
-
-This project provides a clean separation of concerns:
-
-
-
-
-- Backend focuses on business logic, data storage, and API.
-- Frontend focuses on user interface, routing, and data visualization.
-- Local development with a single command to run both.
-
-This architecture ensures maintainability, scalability, and ease of understanding.
+Integrate cloud database (PostgreSQL)
