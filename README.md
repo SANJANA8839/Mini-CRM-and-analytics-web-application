@@ -32,7 +32,6 @@ git clone https://github.com/yourusername/Mini-CRM-Analytics-Web-App.git
 cd Mini-CRM-Analytics-Web-App
 🧩 Step 2: Setup Backend (FastAPI)
 bash
-Copy code
 cd backend
 python -m venv venv
 venv\Scripts\activate     # For Windows
@@ -42,7 +41,6 @@ uvicorn app.main:app --reload --port 8000
 
 🧩 Step 3: Setup Frontend (React + Vite)
 bash
-Copy code
 cd ../frontend
 npm install
 npm run dev
@@ -51,6 +49,7 @@ npm run dev
 
 
 💡 Future Enhancements
+
 🔑 Role-based user access (Admin/User)
 
 ☁️ Cloud database integration (PostgreSQL)
