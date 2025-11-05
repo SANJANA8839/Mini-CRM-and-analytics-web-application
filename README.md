@@ -24,32 +24,6 @@ A full-stack **Customer Relationship Management (CRM)** web application that hel
 
 ---
 
-## 🧠 Project Structure  
-
-Mini-CRM-Analytics-Web-App/
-│
-├── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── routes/
-│ │ ├── models/
-│ │ ├── schemas/
-│ │ └── database.py
-│ └── requirements.txt
-│
-├── frontend/
-│ ├── src/
-│ ├── public/
-│ ├── package.json
-│ └── vite.config.js
-│
-└── README.md
-
-yaml
-Copy code
-
----
-
 ## ⚡ Setup & Run Instructions  
 
 ### 🧩 Step 1: Clone the Repository  
@@ -74,8 +48,7 @@ npm install
 npm run dev
 ➡ Frontend runs on: http://localhost:5173
 
-📈 Screenshots
-Add screenshots or demo GIFs here (e.g., Login Page, Dashboard, Analytics View)
+
 
 💡 Future Enhancements
 🔑 Role-based user access (Admin/User)
